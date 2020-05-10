@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-header">
+      {{pageTitle}}
+    </div>
+    <div class="card-body">
+      <div class="container-fluid">
+        <div >
+          <br>
+            <div>Tracks Record</div>
+            <div><br>To Filter by Id: <input type='text' [(ngModel)]="SearchbyId"/><ul class='nav nav-pills'><li><a class='nav-link' routerLinkActive='active' [routerLink]="['/track/',SearchbyId]" >Search</a></li></ul></div>
+            <div></div>
+            <div>To Filter by artist:<input type='text' [(ngModel)]="SearchbyArtist"/><ul class='nav nav-pills'><li><a class='nav-link' routerLinkActive='active' [routerLink]="['track/artist/', SearchbyArtist]" >Search</a></li></ul></div>
+            
+        </div>
+  
+        <div ><br>Developed by:</div>
+        <div >
+          <h3>Jaikiran Sawant</h3>
+        </div>
+  
+        <div>@JaikiranSawnt</div>
+        <div>
+          <a href="https://www.linkedin.com/in/jaikiransawant/">www.linkedin.com/in/jaikiransawant/</a>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,31 @@
+<legend>Track Information</legend>
+<div class='card'>
+	<div class='card-body'>
+		<div class='table-responsive'>
+			<table class='table'
+				   *ngIf='tracks && tracks.length'>
+			  <thead>
+				<tr>
+				  <th>Id</th>
+				  <th>Title</th>
+				  <th>Artist</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr *ngFor='let track of tracks'>
+				  <td>
+					  {{ track.id }}
+				  </td>
+				  <td>{{ track.title}}</td>
+				  <td>{{ track.artist }}</td>
+				</tr>
+			  </tbody>
+			</table>
+		  </div>
+	</div>
+	<div *ngIf='errorMessage'
+	class='alert alert-danger'>
+	Error: {{ errorMessage }}
+</div>
+<ul class='nav nav-pills'><li><a class='nav-link' routerLinkActive='active' [routerLink]="['']" >Back</a></li></ul>
+</div>	
